@@ -13,7 +13,7 @@ function Layout(props) {
             <div key={index} className="bg-white p-2 rounded mb-2">
               <p
                 className="text-base cursor-pointer font-secondary"
-                onClick={() => props.setSelectedTask()}
+                onClick={() => props.setSelectedTask(task)}
               >
                 - {task.text}
               </p>
