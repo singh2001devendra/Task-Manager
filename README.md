@@ -1,16 +1,45 @@
-# React Task Management with Priority Lists
+# Task Management Application
 
-## Features
+## Overview
+This application is a straightforward task management tool designed for efficient task tracking. It provides users with a basic dashboard that displays tasks in various categories, allows for task creation and management, and supports searching and filtering to streamline task navigation. The focus is on delivering a simple, user-friendly experience with essential task management functionalities.
 
-- **Task Creation:** Add tasks to the respective priority lists.
-- **Edit Task:** Modify task details such as the task name and description.
-- **Delete Task:** Remove tasks when they are no longer needed.
-- **Priority Management:** Move tasks between priority lists.
-- **Visual Representation:** Each priority list is color-coded for quick identification.
+## Core Features
+### Dashboard
+- A central dashboard displays a list of tasks upon accessing the application.
+- The dashboard includes sections for:
+  - **Upcoming Tasks**: Tasks that are due soon.
+  - **Overdue Tasks**: Tasks that are past their due date.
+  - **Completed Tasks**: Tasks marked as completed.
 
-## Screenshots
+### Task Management
+- Users can **add**, **edit**, and **delete** tasks.
+- Each task includes:
+  - **Title**: A short title describing the task.
+  - **Description**: Additional details about the task.
+  - **Due Date**: When the task should be completed.
+  - **Priority Level**: A priority setting to help users focus on important tasks.
 
-![Screenshot 1](https://lh3.googleusercontent.com/u/0/drive-viewer/AITFw-xB_NskCCSMSnG-n9fDvajBY9qQtBOd1zc76vkmv3l0_-XrX5oeQo51jerPfEbXlkIZLFhSclNXFI4Z4CSs4joj3fUZ=w1920-h883)
+### Priority Levels
+- Tasks have three priority levels:
+  - **High**
+  - **Medium**
+  - **Low**
+- Users can set and update the priority level for each task.
+
+### Search and Filter
+- A search bar allows users to quickly find tasks by keyword.
+- Filters enable users to view tasks based on:
+  - **Priority Level**: Filter by High, Medium, or Low.
+  - **Completion Status**: View completed or incomplete tasks.
+
+## Assumptions Made During Development
+- **Task Completion**: Users manually mark tasks as completed. Once completed, tasks will appear in the "Completed Tasks" section of the dashboard.
+- **Task Sorting**: Tasks are displayed in order of priority on the dashboard, with the default sort order prioritizing High, Medium, and Low priority tasks.
+- **Overdue Status**: A task is considered "overdue" if the current date is past the task’s due date, regardless of priority level.
+- **User Authentication**: For simplicity, user authentication is not implemented in this version.
+- **UI Design**: The emphasis is on a functional, clean interface with straightforward task management options.
+
+
 
 ## Getting Started
 
@@ -63,19 +92,5 @@ Follow these instructions to get a copy of the project up and running on your lo
 - [React](https://reactjs.org/) - JavaScript library for building user interfaces.
 - [Tailwind CSS](https://tailwindcss.com/) - Library for adding beautiful Styling With Responsive Design.
 
-## Contributing
 
-Contributions are welcome! Fork the repository and create a pull request with your changes.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used as inspiration.
-- Thanks to the React and open-source community for their amazing work.
-
----
-
-Feel free to customize this README according to your project's needs. Good luck with your React Task Management app! If you have any questions or need further assistance, don't hesitate to reach out.
