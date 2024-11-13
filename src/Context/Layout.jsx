@@ -9,7 +9,7 @@ function Layout(props) {
           <h2 className="text-lg font-primary font-semibold mb-2">
             {props.level} Priority
           </h2>
-          {props.getTasksByPriority(props.level).map((task, index) => (
+          {props.getTasksByPriority(props.level).map((task, ) => (
             <div key={index} className="bg-white p-2 rounded mb-2">
               <p
                 className="text-base cursor-pointer font-secondary"
