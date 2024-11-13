@@ -15,7 +15,7 @@ const Action = (props) => {
         className="btn btn-secondary"
         onClick={() =>
           props.handleChangePriority(
-            prompt("Enter new priority:", props.selectedTask.pr)
+            prompt("Enter new priority:", props.selectedTask.priority)
           )
         }
       >
